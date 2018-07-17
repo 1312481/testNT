@@ -1,0 +1,43 @@
+.content {
+    display: flex;
+    margin-top: 60px;
+}
+
+.content__imageContainer {
+    display: flex;
+    align-items: center;
+}
+
+.content__imageContainer__image {
+    width: 100%;
+}
+
+.content__contentContainer__welcome {
+    color: red;
+    font-weight: bold;
+}
+
+.content__imageContainer__divImage {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.content__contentContainer__introduction {
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.content__contentContainer__mainContent {
+    margin-top: 15px;
+}
+
+.content__contentContainer__mainFooter {
+    margin-top: 30px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+}
