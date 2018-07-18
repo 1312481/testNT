@@ -2,16 +2,60 @@
 .content__form{
   border-right: 1px solid #cccccc;
   background-color: #f6f6f6;
-  height: 100vh;
+  height: 85vh;
 }
 .content__form__header{
   font-size: 1.5rem;
   font-weight: 500;
+  margin-top: 40px;
 }
+.content__form__email{
+  margin-top: 20px;
+}
+.content__form__password{
+  margin-top: 20px;
+}
+.content__form__buttonSubmit{
+  margin-top: 20px;
+}
+.containerTemp{
+  margin: 0 auto;
+  width: 90%;
+}
+.btn-activate{
+  background-color: #e82c2e;
+}
+.content__contentContainer__welcome {
+  color: #e82c2e;
+  font-weight: 650;
+  line-height: 0.2;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
+.content__contentContainer__introduction {
+  font-size: 2.3rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
+.content__contentContainer__mainContent {
+    margin-top: 40px;
+    font-size: 0.9rem;
 
-
-@media (min-width: 1200px) {
+}
+/* @media (min-width: 1441px) {
   .container {
-      max-width: 830px;
+      max-width: 90%;
   }
 }
+@media (max-width: 1440px) and (min-width: 1024px) {
+  .container {
+      max-width: 950px;
+  }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .container {
+      max-width: 680px;
+  }
+} */
+

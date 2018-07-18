@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class LoginpageComponent implements OnInit {
 
   constructor() { }
-
+  w = screen.width;
   ngOnInit() {
+    console.log(this.w);
   }
 
 }

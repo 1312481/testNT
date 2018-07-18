@@ -6,8 +6,20 @@
     padding: 15px;
     font-size: 0.8rem;
 }
-@media (min-width: 1200px) {
-    .container{
-        max-width: 800px;
+.containerTemp{
+    margin: 0 auto;
+    width: 90%;
+}
+
+/* @media (max-width: 1440px) and (min-width: 1024px) {
+    .container {
+        max-width: 920px;
     }
 }
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .container {
+        max-width: 650px;
+    }
+}
+ */
