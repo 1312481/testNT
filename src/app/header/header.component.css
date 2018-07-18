@@ -21,7 +21,7 @@ hr {
 
 @media (max-width: 767px) {
     .header__headerLeft__logo{
-        width: 80%;
+        width: 70%;
     }
     .header__headerRight{
         margin-right: 0;

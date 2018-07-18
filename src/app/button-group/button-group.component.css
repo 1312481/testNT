@@ -5,6 +5,8 @@
     border: 1px solid red;
     font-size: 0.7rem;
     font-weight: bold;
+    padding-left: 19.5px;
+    padding-right: 19.5px;
 }
 
 .header__headerRight__buttonSupplier {
@@ -12,4 +14,6 @@
     font-size: 0.7rem;
     font-weight: bold;
     background-color: #e82c2e;
+    padding-left: 12px;
+    padding-right: 12px;
 }

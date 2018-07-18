@@ -1,101 +1,124 @@
 <div class="header">
-    <div class="header__logo">
-        <div>
-            <app-logo></app-logo>
-        </div>
-        <div>
-            <span class="header__logo__tab">User Management</span>
-        </div>
+  <div class="header__logo">
+    <div>
+      <app-logo></app-logo>
     </div>
-    <div class="header__control">
-        <div>
+    <div>
+      <span class="header__logo__tab">User Management</span>
+    </div>
+  </div>
+  <div class="header__control">
+    <div>
+      <div class="header__control__button">
+        <app-button-group></app-button-group>
+      </div>
+      <div class="header__control__detail">
+        <div class="header__control__name">
+          <div class="header__control__accountName">John Wick</div>
+          <div class="header__control__accountRight">User Administrator</div>
+        </div>
+        <div class="header__control__button">
+          <a class="btn-dropdown" id="dropdownMenuButton" aria-expanded="false" data-toggle="dropdown" aria-haspopup="true">
+            <i class="fa fa-ellipsis-v customfa" aria-haspopup="true" aria-expanded="false" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
             <div>
-                <app-button-group></app-button-group>
+              <button class="dropdown-item" type="button">My Profile</button>
             </div>
-            <div class="header__control__detail">
-                <div class="header__control__name">
-                    <div class="header__control__accountName">John Wick</div>
-                    <div class="header__control__accountRight">User Administrator</div>
-                </div>
-                <div class="header__control__button">
-                    <i class="fa fa-ellipsis-v customfa" aria-haspopup="true" aria-expanded="false" aria-hidden="true"></i>
-                </div>
+            <div class="dropdown-item-container">
+              <button class="dropdown-item" type="button">Logout</button>
             </div>
+
+          </div>
         </div>
+
+      </div>
     </div>
+  </div>
 </div>
 <hr/>
 
 <div class="content">
-    <div class="content__header containerTemp">
-        <div class="content__header__organization">ORGANISATION</div>
-        <div class="content__header__management">User Management</div>
-        <div class="content__header__user">
-            <div>Current Users</div>
-            <div>
-                <button class="btn btn-danger header__headerRight__buttonSupplier">Create New Contact</button>
-            </div>
-        </div>
-        <div class="content__header__search">
-            <form class="">
-                <div class="form-group d-flex mb-1">
-                    <label class="sr-only" for="">label</label>
-                    <div class="form-control d-flex p-0">
-                        <input type="text" class="form-control" placeholder="Search users by first name or last name">
-                        <i class="fa fa-search fa-search-custom" aria-hidden="true"></i>
-                    </div>
-
-                    <button type="submit" class="btn btn-default input-group-text-custom">
-                        <i class="fa fa-cog fa-cog-custom" aria-hidden="true"></i>
-                    </button>
-                </div>
-                <p class="content__header__searchDetail">Click the settings button to customize your search</p>
-            </form>
-        </div>
-
-
-        <ngx-datatable class="bootstrap" [rows]="rows" [loadingIndicator]="loadingIndicator" [columns]="columns" [columnMode]="'force'"
-            [headerHeight]="40" [summaryRow]="true" [summaryPosition]="'bottom'" [footerHeight]="40" [limit]="10" [rowHeight]="'auto'"
-            [reorderable]="reorderable" [selectionType]="'checkbox'" >
-            <ngx-datatable-column [width]="100" [headerCheckboxable]="true"
-            [checkboxable]="true" [sortable]="false" [canAutoResize]="false" [draggable]="false" [resizeable]="false">
-                <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template></ng-template>
-                <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
-                    <a class="edit">Edit</a>
-                </ng-template>
-            </ngx-datatable-column>
-            <ngx-datatable-column name="NAME" [flexGrow]="3" headerClass="dXs1" cellClass="dXs1">
-                <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
-                    <p class="m-0">{{value.userName}}</p>
-                    <p class="m-0 office dXs3">{{value.off}}</p>
-                </ng-template>
-            </ngx-datatable-column>
-
-            <ngx-datatable-column name="COMMS" [flexGrow]="3" headerClass="dXs1" cellClass="dXs1">
-                <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
-                    <p class="m-0">{{value.email}}</p>
-                    <p class="m-0 office dXs3">{{value.phone}}</p>
-                </ng-template>
-            </ngx-datatable-column>
-            <ngx-datatable-column name="COUNTRY" [flexGrow]="3" headerClass="dXs1" cellClass="dXs1">
-                <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
-                    <p class="m-0">{{value}}</p>
-                </ng-template>
-            </ngx-datatable-column>
-            <ngx-datatable-column name="ROLE" [flexGrow]="3" headerClass="dXs1" cellClass="dXs1">
-                <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
-                    <p class="m-0">{{value}}</p>
-                </ng-template>
-            </ngx-datatable-column>
-            <ngx-datatable-column name="STATUS" [flexGrow]="3" headerClass="dXs1" cellClass="dXs1">
-                <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
-                    <p class="m-0">{{value}}</p>
-                </ng-template>
-            </ngx-datatable-column>
-        </ngx-datatable>
-
-
+  <div class="content__header containerTemp">
+    <div class="content__header__organization">ORGANISATION</div>
+    <div class="content__header__management">User Management</div>
+    <div class="content__header__user">
+      <div class="content__header__currentuser">Current Users</div>
+      <div>
+        <button class="btn btn-danger header__headerRight__newContact">Create New Contact</button>
+      </div>
     </div>
+    <div class="content__header__search">
+      <form class="">
+        <div class="form-group d-flex mb-1">
+          <label class="sr-only" for="">label</label>
+          <div class="search">
+            <input type="text" class="form-control" placeholder="Search users by first name or last name">
+            <span class="fa fa-search" aria-hidden="true"></span>
+          </div>
+
+          <button type="submit" class="btn btn-default input-group-text-custom">
+            <i class="fa fa-cog fa-cog-custom" aria-hidden="true"></i>
+          </button>
+        </div>
+        <p class="content__header__searchDetail">Click the settings button to customize your search</p>
+      </form>
+    </div>
+
+    <div class="content__header__invite">
+      <div class="content__header__inviteGroup">
+        <div class="content__header__inviteIcon">
+          <i class="fa fa-telegram"></i>
+        </div>
+
+        <div class="content__header__inviteContent">Invite the Selected</div>
+      </div>
+    </div>
+
+    <div class="content__header__table">
+      <ngx-datatable class="bootstrap" [rows]="rows" [loadingIndicator]="loadingIndicator" [columns]="columns" [columnMode]="'force'"
+        [headerHeight]="40" [summaryRow]="true" [summaryPosition]="'bottom'" [footerHeight]="40" [limit]="10" [rowHeight]="'auto'"
+        [reorderable]="reorderable" [selectionType]="'checkbox'">
+        <ngx-datatable-column cellClass="edit-column" [width]="100" [headerCheckboxable]="true" [checkboxable]="true" [sortable]="false" [canAutoResize]="false"
+          [draggable]="false" [resizeable]="false">
+          <ng-template let-column="column" let-sort="sortFn" ngx-datatable-header-template></ng-template>
+          <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+            <a class="edit">Edit</a>
+          </ng-template>
+        </ngx-datatable-column>
+        <ngx-datatable-column name="NAME" [flexGrow]="3" headerClass="dXs1" cellClass="dXs1">
+          <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+            <p class="m-0">{{value.userName}}</p>
+            <p class="m-0 office dXs3">{{value.off}}</p>
+          </ng-template>
+        </ngx-datatable-column>
+
+        <ngx-datatable-column name="COMMS" [flexGrow]="3" headerClass="dXs1" cellClass="dXs1">
+          <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+            <p class="m-0 comms">{{value.email}}</p>
+            <p class="m-0 office dXs3 comms">{{value.phone}}</p>
+          </ng-template>
+        </ngx-datatable-column>
+        <ngx-datatable-column name="COUNTRY" [flexGrow]="3" headerClass="dXs1" cellClass="dXs1">
+          <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+            <p class="m-0">{{value}}</p>
+          </ng-template>
+        </ngx-datatable-column>
+        <ngx-datatable-column name="ROLE" [flexGrow]="3" headerClass="dXs1" cellClass="dXs1">
+          <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+            <p class="m-0">{{value}}</p>
+          </ng-template>
+        </ngx-datatable-column>
+        <ngx-datatable-column name="STATUS" [flexGrow]="3" headerClass="dXs1" cellClass="dXs1">
+          <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+            <p class="m-0">{{value}}</p>
+          </ng-template>
+        </ngx-datatable-column>
+
+      </ngx-datatable>
+    </div>
+
+  </div>
 </div>
 
 
