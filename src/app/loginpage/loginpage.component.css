@@ -1,0 +1,17 @@
+
+.content__form{
+  border-right: 1px solid #cccccc;
+  background-color: #f6f6f6;
+  height: 100vh;
+}
+.content__form__header{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+@media (min-width: 1200px) {
+  .container {
+      max-width: 830px;
+  }
+}

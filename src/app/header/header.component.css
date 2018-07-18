@@ -21,14 +21,15 @@
     border-radius: 0;
     font-size: 0.7rem;
     font-weight: bold;
+    background-color: #e82c2e;
 }
 
 hr {
     display: block;
-    height: 1px;
     border: 0;
     border-top: 2px solid #ccc;
-    margin: 1em 0;
+    margin-bottom: 0 !important;
     padding: 0;
+
 }
 
