@@ -9,8 +9,10 @@ export class LoginpageComponent implements OnInit {
 
   constructor() { }
   w = screen.width;
+  h = screen.height;
   ngOnInit() {
     console.log(this.w);
+    console.log(this.h);
   }
 
 }

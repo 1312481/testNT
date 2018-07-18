@@ -1,55 +1,55 @@
 <div class="container">
   <div class="containerTemp">
-  <app-header></app-header>
-  <div class="content container row">
+    <app-header></app-header>
+    <div class="content container row">
 
-    <div class="content__form col-5">
-      <div class="containerTemp">
-        <div class="content__form__header">
-          Login
+      <div class="content__form col-xl-5 col-lg-5 col-md-5 col-12">
+        <div class="containerTemp">
+          <div class="content__form__header">
+            Login
+          </div>
+          <div class="content__form__content">
+            <div class="content__form__email">
+              <div class="content__form__emailTitle">
+                Email Address*
+              </div>
+              <div class="content__form__emailTitle">
+                <input type="text" class="form-control" placeholder="Enter email" aria-label="Enter email" aria-describedby="basic-addon1">
+              </div>
+            </div>
+
+            <div class="content__form__password">
+              <div class="content__form__passwordTitle">
+                Password*
+              </div>
+              <div class="content__form__passwordTitle">
+                <input type="text" class="form-control" placeholder="Enter password" aria-label="Enter password" aria-describedby="basic-addon1">
+              </div>
+              <div class="content__form__passwordMoreInfo">
+                Not received your password?
+                <u>Resend now</u>
+              </div>
+            </div>
+
+            <div class="content__form__buttonSubmit">
+              <button type="button" class="btn btn-danger btn-activate">Login</button>
+            </div>
+          </div>
         </div>
-        <div class="content__form__content">
-          <div class="content__form__email">
-            <div class="content__form__emailTitle">
-              Email Address*
-            </div>
-            <div class="content__form__emailTitle">
-              <input type="text" class="form-control" placeholder="Enter email" aria-label="Enter email" aria-describedby="basic-addon1">
-            </div>
-          </div>
-
-          <div class="content__form__password">
-            <div class="content__form__passwordTitle">
-              Password*
-            </div>
-            <div class="content__form__passwordTitle">
-              <input type="text" class="form-control" placeholder="Enter password" aria-label="Enter password" aria-describedby="basic-addon1">
-            </div>
-            <div class="content__form__passwordMoreInfo">
-              Not received your password?
-              <u>Resend now</u>
-            </div>
-          </div>
-
-          <div class="content__form__buttonSubmit">
-            <button type="button" class="btn btn-danger btn-activate">Login</button>
-          </div>
+      </div>
+      <div class="content__contentContainer col-xl-7 col-lg-7 col-md-7 col-12">
+        <div class="content__contentContainer__welcome">
+          WELCOME BACK
         </div>
+        <div class="content__contentContainer__introduction">
+          Please enter your login credentials to start your onboarding process
+        </div>
+        <div class="content__contentContainer__mainContent">
+          A one-time password was emailed to you on 9th March
+        </div>
+
       </div>
     </div>
-    <div class="content__contentContainer col-7">
-      <div class="content__contentContainer__welcome">
-        WELCOME BACK
-      </div>
-      <div class="content__contentContainer__introduction">
-        Please enter your login credentials to start your onboarding process
-      </div>
-      <div class="content__contentContainer__mainContent">
-        A one-time password was emailed to you on 9th March
-      </div>
-
-    </div>
+    <app-footer></app-footer>
   </div>
-  <app-footer></app-footer>
-</div>
 </div>

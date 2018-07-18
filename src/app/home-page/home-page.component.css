@@ -1,0 +1,100 @@
+@import '~@swimlane/ngx-datatable/release/index.css';
+@import '~@swimlane/ngx-datatable/release/themes/bootstrap.css';
+@import '~@swimlane/ngx-datatable/release/assets/icons.css';
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.header__logo__tab {
+    margin-top: 5px;
+    margin-left: 25px;
+    font-weight: 600;
+    position: relative;
+}
+
+.header__logo__tab:before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 3px;
+    background-color: red;
+    bottom: -5px;
+}
+
+.header__control {
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.header__control__detail {
+    display: flex;
+
+}
+.header__control__name{
+    text-align: right;
+    flex: 9;
+}
+.header__control__button{
+    flex: 1;
+}
+.header__control__accountName{
+    font-weight: 600;
+}
+.header__control__accountRight{
+    font-size: 0.8rem;
+}
+.customfa{
+    padding-left: 20px;
+    font-size: 40px;
+}
+.header__headerRight__buttonSupplier {
+    border-radius: 0;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background-color: #e82c2e;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.content__header__user{
+    display: flex;
+    justify-content: space-between;
+}
+.containerTemp{
+    width: 95%;
+    margin: 0 auto;
+}
+.content{
+    background-color: #f6f6f6;
+}
+.input-group-text-custom{
+    background-color: #babcbe;
+}
+.fa-cog-custom{
+    color: white;
+    font-size: 13px;
+}
+.content__header__searchDetail{
+    font-size: 0.6rem;
+}
+.fa-search-custom{
+    padding: 10px;
+    border: 0;
+}
+.ngx-datatable.bootstrap .datatable-header{
+    background-color: black;
+    color: white;
+}
+hr {
+    display: block;
+    border: 0;
+    border-top: 1px solid gray;
+    margin-bottom: 0 !important;
+    padding: 0;
+}

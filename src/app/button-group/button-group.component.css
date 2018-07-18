@@ -1,0 +1,15 @@
+.header__headerRight__buttonBuyer {
+    border-radius: 0;
+    background-color: white;
+    color: black;
+    border: 1px solid red;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.header__headerRight__buttonSupplier {
+    border-radius: 0;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background-color: #e82c2e;
+}

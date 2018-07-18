@@ -3,6 +3,11 @@
     margin-top: 50px;
 }
 
+.containerTemp {
+    margin: 0 auto;
+    width: 90%;
+}
+
 .content__imageContainer {
     display: flex;
     align-items: center;
@@ -44,24 +49,24 @@
     display: flex;
     margin-top: 30px;
 }
-.content__contentContainer__activateDetail{
-  font-size: 0.8rem;
+
+.content__contentContainer__activateDetail {
+    font-size: 0.8rem;
 }
-.btn-signIn{
-  background-color: white;
-  font-weight: 600;
-  padding-left: 60px;
-  padding-right: 60px;
-  border: 1px solid gray;
+
+.btn-signIn {
+    background-color: white;
+    font-weight: 600;
+    padding-left: 60px;
+    padding-right: 60px;
+    border: 1px solid gray;
 }
-.btn-activate{
-  background-color: #e82c2e;
+
+.btn-activate {
+    background-color: #e82c2e;
 }
-.content__contentContainer__signIn{
-  margin-left: 20px;
+
+.content__contentContainer__signIn {
+    margin-left: 20px;
 }
-@media (min-width: 1200px) {
-    .container {
-        max-width: 830px;
-    }
-}
+

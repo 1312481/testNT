@@ -1,30 +1,45 @@
+.content {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
 
-.content__form{
+.content__form {
   border-right: 1px solid #cccccc;
   background-color: #f6f6f6;
   height: 85vh;
 }
-.content__form__header{
+
+.content__form__header {
   font-size: 1.5rem;
   font-weight: 500;
   margin-top: 40px;
 }
-.content__form__email{
+
+.content__form__email {
   margin-top: 20px;
 }
-.content__form__password{
+
+.content__form__password {
   margin-top: 20px;
 }
-.content__form__buttonSubmit{
+
+.content__form__buttonSubmit {
   margin-top: 20px;
 }
-.containerTemp{
+
+.containerTemp {
   margin: 0 auto;
   width: 90%;
 }
-.btn-activate{
+
+.btn-activate {
   background-color: #e82c2e;
+  padding-left: 35px;
+  padding-right: 35px;
 }
+
 .content__contentContainer__welcome {
   color: #e82c2e;
   font-weight: 650;
@@ -32,16 +47,96 @@
   font-size: 0.9rem;
   margin-top: 60px;
 }
+
 .content__contentContainer__introduction {
   font-size: 2.3rem;
   font-weight: bold;
   line-height: 1.3;
 }
-.content__contentContainer__mainContent {
-    margin-top: 40px;
-    font-size: 0.9rem;
 
+.content__contentContainer__mainContent {
+  margin-top: 40px;
+  font-size: 1.1rem;
 }
+
+.content__form__passwordMoreInfo {
+  font-size: 0.7rem;
+}
+
+@media (max-width: 767px) {
+  .content__form {
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    background-color: #f6f6f6;
+    height: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .content__contentContainer__introduction {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .content__form__header {
+    font-size: 1rem;
+    margin-top: 4%;
+  }
+  .content__form__emailTitle {
+    font-size: 0.7rem;
+  }
+  .content__form__password {
+    font-size: 0.7rem;
+    margin-top: 4%;
+  }
+  .content__form__passwordMoreInfo {
+    font-size: 0.5rem;
+  }
+  .content__contentContainer__introduction {
+    font-size: 1.5rem;
+  }
+  .content__form {
+    border-right: 1px solid #cccccc;
+    background-color: #f6f6f6;
+    height: 300px;
+  }
+}
+
+/* @media (max-height: 768px) {
+  .content__form__header {
+    margin-top: 4%;
+  }
+  .content__form__email {
+    margin-top: 4%;
+  }
+  .content__form__password {
+    margin-top: 4%;
+  }
+  .content__form__buttonSubmit {
+    margin-top: 8%;
+  }
+  .content__contentContainer__welcome {
+    margin-top: 5%;
+  }
+}
+
+@media (max-height: 625px) {
+  .content__form__header {
+    margin-top: 1%;
+  }
+  .content__form__email {
+    margin-top: 1%;
+  }
+  .content__form__password {
+    margin-top: 1%;
+  }
+  .content__form__buttonSubmit {
+    margin-top: 1%;
+  }
+} */
+
 /* @media (min-width: 1441px) {
   .container {
       max-width: 90%;
@@ -58,4 +153,3 @@
       max-width: 680px;
   }
 } */
-
